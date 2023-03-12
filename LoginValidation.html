@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form Validation </title>
+    <link rel="stylesheet" href="LoginValidation.css">
+</head>
+<body>
+        
+
+<form name="Form" onsubmit="return validateForm()">
+    <h2>Login Form</h2>
+    <div class="box">
+        <label> Username</label>
+        <input type="text" name="name" id="name">
+        <div class="error" id="nameErr"></div>
+    </div>
+    <div class="box">
+        <label>Password</label>
+        <input type="password" name="password" id="password">
+        <div class="error" id="passErr"></div>
+    </div>
+        <input type="submit" value="Submit">
+    </div>
+    <div>
+        <p>Don't have an account yet ?</p>
+        <a href="RegistrationValidation.html">Sign UP</a>
+    </div>
+    <a href="#">Forgot password ?</a>
+</form>
+
+<script src="LoginFormValidation.js"></script>
+</body>
+</html>
