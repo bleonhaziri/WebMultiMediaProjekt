@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/preload.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="preload" href="fonts/custom-font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    
+    <header>
+        <h1>Republic of Kosovo Travel Guide</h1>
+        <p>Your ultimate guide to exploring the beauty of Kosovo</p>
+    </header>
+
+    <main>
+        <section id="destinations">
+            <h2>Top Destinations</h2>
+            <div class="slider">
+                <div class="slide">
+                    <img src="images/prishtina.jpeg" alt="Prishtina">
+                    <p>Prishtina</p>
+                    <a href="prishtina.html" class="button">Learn More</a>
+                </div>
+                <div class="slide">
+                    <img src="images/pejaa.jpg" alt="Peja">
+                    <p>Peja</p>
+                    <a href="peja.html" class="button">Learn More</a>
+                </div>              
+                <div class="slide">
+                    <img src="images/gjakova.jpg" alt="Gjakova">
+                    <p>Gjakova</p>
+                    <a href="gjakova.html" class="button">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="audio-guide">
+            <h1>Anthem of the Republic of Kosovo</h1>
+            <audio controls>
+                <source src="audio/National Anthem of Kosovo AlbanianEnglish translation.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel Guide. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Remove preloader after everything is loaded
+        window.addEventListener('load', () => {
+            document.getElementById('preloader').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
